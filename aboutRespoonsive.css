@@ -1,0 +1,105 @@
+
+
+@media all and (max-width: 844px){
+    #content{
+        width: 390px;
+    }
+    header #header_container_list{
+        width: 390px;
+        padding: 8px 12px;
+    }
+    header #header_container_list li{
+        display: none;
+    }
+    header #header_container_list li#logo{
+        display: block;
+    }
+    header #header_container_list li#navIcon{
+        display: block;
+    }
+    header #banner #text{
+        padding: 12px;
+        top: 150px;
+        left: 14px;
+    }
+
+    /* ABOUT CONTAINER  */
+    article#about_container{
+        padding: 12px;
+    }
+    article#about_container p{
+        line-height: 22px;
+    }
+
+   /* AVT CONTAINER  */
+   #avt_container{
+    padding: 70px 24px;
+   }
+   #avt_container #avt_container_list{
+    flex-direction: column;
+   }
+   #avt_container #avt_container_list .avt_container_item{
+    width: 100%;
+    margin-bottom: 32px;
+   }
+   #avt_container #avt_container_list .avt_container_item i {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+/* ARTICLE CONTAINER  */
+#article_container{
+    position: static;
+    padding: 70px 24px;
+    flex-direction: column;
+}
+article#article_container .img{
+    width: 100%;
+    height: 400px;
+}
+article#article_container #article_container_content{
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 70px 24px;
+}
+article#article_container #article_container_content h1{
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+    /* SUBCRIBE CONTAINER  */
+    #subcribe_container{
+        padding: 24px;
+        flex-direction: column;
+    }
+    #subcribe_container #title{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #subcribe_container form{
+        width: 100%;
+    }
+
+    #feedBack_container{
+        padding: 12px;
+        margin-top: 34px;
+        font-size: 42px;
+        font-family: serif;
+    }
+    #figure_container{
+        height: auto;
+        margin-top: 34px;
+    }
+    footer{
+        padding: 24px;
+    }
+    footer #footer_container_list{
+        flex-direction: column;
+    }
+    footer #footer_container_list .footer_container_item{
+        margin-bottom: 24px;
+    }
+    
+}

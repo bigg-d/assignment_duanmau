@@ -1,0 +1,95 @@
+.banner{
+    height: 500px;
+    background-color: #e3e3e3;
+    text-align: center;
+    line-height: 500px;
+}
+.banner #text h1{
+    font-family: serif;
+    font-size: 88px;
+    font-weight: 300;
+}
+#register_container{
+    padding: 80px 100px 100px;
+    display: flex;
+    flex-direction: column;
+}
+#register_container #title{
+    width: 100%;
+    display: flex;   
+    justify-content: center; 
+    margin: 0 auto;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid black;
+}
+#register_container #title a{
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+#register_container label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+#register_container > input{
+    padding: 12px ;
+    margin-bottom: 32px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background-color: #f7f7f7;
+}
+
+#register_container button{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+    background-color: rgb(33, 37, 41);
+}
+
+#subcribe_container{
+    background-color: #dfe0dc;
+    padding: 70px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#subcribe_container #title{
+    width: 45%;
+}
+#subcribe_container #title h1{
+    font-size: 72px;
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+#subcribe_container form{
+    width: 45%;
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+}
+#subcribe_container form input{
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+    outline: none;
+    background-color: #dfe0dc;
+    border: none;
+}
+#subcribe_container form input[type='submit']{
+    background-color: #dfe0dc;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+#subcribe_container form #submit:hover{
+    color: grey;
+    background-color: #ccc;
+}

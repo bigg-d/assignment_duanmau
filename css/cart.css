@@ -1,0 +1,125 @@
+.banner{
+    height: 500px;
+    background-color: #e3e3e3;
+    text-align: center;
+    line-height: 500px;
+}
+.banner #text h1{
+    font-family: serif;
+    font-size: 88px;
+    font-weight: 300;
+}
+#cart_container{
+    width: 100%;
+    padding: 170px 100px 0px;
+}
+#cart_container_title{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+#cart_container_title th{
+}
+.cart_container_item{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.cart_container_item td{
+    display: flex;
+    align-items: center;
+}
+.cart_container_item img{
+    padding: 24px;
+    width: 180px;
+    height: 180px;
+}
+.cart_container_item_infor{
+    margin-top: 64px;
+}
+.cart_container_item_infor h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+.cart_container_item_quantity{
+    width: 150px;
+    height: 44px;
+    padding: 6px 8px;
+    margin-right: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #efefef;
+}
+.cart_container_item_quantity .quantity{
+    width: 240px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #efefef;
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+}
+#cart_container_price{
+    width: 100%;
+    padding: 0 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+#cart_container_price h1{
+    font-size: 42px;
+    font-weight: 500;
+}
+section  > a{
+    border: none;
+    margin: 40px 100px;
+    padding: 8px;
+    background-color: #87826e;
+    color: #fff;
+}
+section > a:hover{
+    background-color: black;
+    color: #fff;
+}
+#subcribe_container{
+    background-color: #dfe0dc;
+    padding: 70px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#subcribe_container #title{
+    width: 45%;
+}
+#subcribe_container #title h1{
+    font-size: 72px;
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+#subcribe_container form{
+    width: 45%;
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+}
+#subcribe_container form input{
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+    outline: none;
+    background-color: #dfe0dc;
+    border: none;
+}
+#subcribe_container form button{
+    background-color: #dfe0dc;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+#subcribe_container form button:hover{
+    color: grey;
+}

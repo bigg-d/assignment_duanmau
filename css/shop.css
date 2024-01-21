@@ -1,0 +1,144 @@
+.banner{
+    height: 500px;
+    background-color: #e3e3e3;
+    text-align: center;
+    line-height: 500px;
+}
+.banner #text h1{
+    font-family: serif;
+    font-size: 88px;
+    font-weight: 300;
+}
+/* PRODUCT CONTAINER  */
+#product_container{
+    width: 72%;
+    padding: 100px;
+    display: inline-block;
+    padding-left: 100px;
+}
+#product_container_list1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 16px;
+}
+#product_container_list1 .product_container_item{
+    width: 32%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#product_container_list1 .product_container_item img{
+    width: 100%;
+    margin-bottom: 14px;
+    transition: 0.6s ease;
+    overflow: clip;
+}
+#product_container_list1 .product_container_item img:hover{
+    /* transform: scale(1.02); */
+    opacity: 0.6;
+    transition: 0.6s ease;
+
+}
+#product_container_list1 .product_container_item h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(33, 37, 41);
+    margin-bottom: 10px;
+}
+#product_container_list1 .product_container_item p{
+    text-align: center;
+    opacity: 0.7;
+}
+#product_container_list1 .product_container_item .addToCartBtn{
+    font-size: 24px;
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 38%;
+    color: #151412;
+
+}
+
+#product_container_list1 .product_container_item .addToCartBtn:hover{
+    color: grey;
+    transition: 0,6s ease;
+}
+#product_container_list1 .product_container_item:hover .addToCartBtn{
+    display: block;
+}
+
+/* ASIDE CONTAINER  */
+#search_container{
+    width: 28%;
+    float: right;
+    padding-top: 170px;
+    padding-right: 100px;
+    padding-left: 40px;
+}
+#search_input{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+#search_input h1{
+    font-weight: 300;
+    opacity: 0.6;
+}
+#search_container .search_container_list{
+    margin-top: 24px;
+    list-style: none;
+}
+#search_container .search_container_list h1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: serif;
+    text-decoration: underline;
+}
+.search_container_item{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+/* SUBCRIBE CONTAINER  */
+#subcribe_container{
+    background-color: #dfe0dc;
+    padding: 70px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#subcribe_container #title{
+    width: 45%;
+}
+#subcribe_container #title h1{
+    font-size: 72px;
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+#subcribe_container form{
+    width: 45%;
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+}
+#subcribe_container form input{
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+    outline: none;
+    background-color: #dfe0dc;
+    border: none;
+}
+#subcribe_container form button{
+    background-color: #dfe0dc;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
