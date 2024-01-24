@@ -16,6 +16,7 @@
             </tr>
             <?php
               foreach ($listthongke as $thongke) {
+                // var_dump($listthongke);
                 extract($thongke);
                 echo'<tr>
                 <td>'.$madm.'</td>

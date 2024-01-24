@@ -51,8 +51,13 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $name = $_POST['name'];
                 $password = $_POST['password'];
                 $email = $_POST['email'];
-                insert_taikhoan($name, $email, $password);
-                $thongbao = "ĐĂNG KÍ THÀNH CÔNG";
+                    
+                if(strlen($password) >= 6){
+                    insert_taikhoan($name, $email, $password);
+                    $thongbao = "ĐĂNG KÍ THÀNH CÔNG";
+                } else{
+                    $thongbao = "Mật khẩu tối thiểu 6 kí tự";
+                }
             }
             include "view/taikhoan/register.php";
             break;
@@ -60,17 +65,9 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             if (isset($_POST['submit']) && $_POST['submit']) {
                 $password = $_POST['password'];
                 $email = $_POST['email'];
-                // $remember = isset($_POST['remember']) ?? false;
                 $checkuser = checkuser($email, $password);
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
-                    // if ($remember) {
-                    //     $thongbao = 'set coookie ';
-                    //     setcookie('remember', $checkuser['id'], time() + 60 * 60 * 24 * 30); //cookie ton tai 1 thang
-                    // } else {
-                    //     $thongbao = 'khong co cokkke';
-                    // }
-                    // $thongbao = "ĐĂNG NHẬP THÀNH CÔNG";
                 } else {
                     $thongbao = "tai khoan khong ton tai";
                 }
@@ -119,10 +116,10 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             if ((isset($_POST['guibinhluan'])) && ($_POST['guibinhluan'])) {
                 $noidung = $_POST['noidung'];
                 $idpro = $_POST['idpro'];
-                $username = $_SESSION['user']['user'];
+                $iduser = $_SESSION['user']['id'];
                 $ngaybinhluan = date('d/m/Y');
 
-                insert_binhluan($noidung, $username, $idpro, $ngaybinhluan);
+                insert_binhluan($noidung, $iduser, $idpro, $ngaybinhluan);
                 header("location: index.php?act=detailProduct&id='$idpro'");
             }
             // include "view/detailProduct.php";

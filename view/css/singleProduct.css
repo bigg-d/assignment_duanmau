@@ -1,48 +1,56 @@
 :root {
-    --primary-font: 'Italian';
-  }
- #singleProduct_container{
-    display: flex;
-    padding: 120px;
+  --primary-font: "Italian";
 }
-#singleProduct_container > img{
-    width: 40%;
+#singleProduct_container {
+  display: flex;
+  padding: 120px 120px 0;
 }
-#singleProduct_container_info{
-    height: 600px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#singleProduct_container > div {
+  width: 50%;
 }
-#singleProduct_container_info h3{
-    font-weight: 500;
-    font-size: 42px;
-    font-family: var(--primary-font) ;
+#singleProduct_container_info {
+  height: 600px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#singleProduct_container_info a{
-    padding: 16px;
-    background-color: black;
-    color: white;
-    border: none;
-    
+#singleProduct_container_info h3 {
+  font-weight: 500;
+  font-size: 42px;
+  font-family: var(--primary-font);
 }
-#singleProduct_container_info  a:hover{
-    background-color: #87826E;
+#singleProduct_container_info a {
+  padding: 16px;
+  background-color: black;
+  color: white;
+  border: none;
 }
-#singleProduct_container_color h4{
-    text-decoration: underline;
-    margin-bottom: 20px;
-    font-size: 32px;
-    font-weight: 500;
-    font-family: var(--primary-font);
+#singleProduct_container_info form #addtocart {
+    padding: 8px;
+  background-color: #333;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
 }
-#singleProduct_container_color ul{
-    width: 200px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+#singleProduct_container_info form #addtocart:hover{
+    background: #87826e;
 }
-#singleProduct_container_color ul li{
-    font-weight: 500;
+
+#singleProduct_container_color h4 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+#singleProduct_container_color ul {
+  width: 200px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#singleProduct_container_color ul li {
+  font-weight: 500;
 }

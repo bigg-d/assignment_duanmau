@@ -1,7 +1,12 @@
-</script>
+<?php
+include "/model/taikhoan.php";
+
+?>
 <!-- SINGLE Product CONTAINER  -->
 <div id="singleProduct_container">
-    <img src="view/img/<?php echo $sanpham['img'] ?>" alt="">
+    <div>
+        <img style="width: 60%" src="view/img/<?php echo $sanpham['img'] ?>" alt="">
+    </div>
     <div id="singleProduct_container_info">
         <h3>
             <?php echo $sanpham['name'] ?>
@@ -25,21 +30,21 @@
             </ul>
         </div>
         <form action="index.php?act=addtocart" method="POST">
-            <input type="hidden" name="id" value="<?=$sanpham['id']?>">
-            <input type="hidden" name="name" value="<?=$sanpham['name']?>">
-            <input type="hidden" name="price" value="<?=$sanpham['price']?>">
-            <input type="hidden" name="img" value="<?=$sanpham['img']?>">
-            <input type="submit" name="addtocart" value="Add to cart">
+            <input type="hidden" name="id" value="<?= $sanpham['id'] ?>">
+            <input type="hidden" name="name" value="<?= $sanpham['name'] ?>">
+            <input type="hidden" name="price" value="<?= $sanpham['price'] ?>">
+            <input type="hidden" name="img" value="<?= $sanpham['img'] ?>">
+            <input id="addtocart" type="submit" name="addtocart" value="Add to cart">
         </form>
     </div>
 </div>
 
 <!-- REVIEW CONTAINER  -->
-<div style='padding: 120px'>
+<div style='padding: 120px 120px 0'>
     <div style='border-bottom: 1px solid black; padding: 18px 0; text-align:center'>
-        <a id="description-link" style='text-decoration: none; color: black; padding: 20px; font-size: 18px'
+        <a id="description-link" style='text-decoration: none; color: black; padding: 20px; font-size: 18px; cursor:pointer'
             onclick="showContent('description')">DESCRIPTION</a>
-        <a id="review-link" style='text-decoration: none; color: #87826e; padding: 20px; font-size: 18px'
+        <a id="review-link" style='text-decoration: none; color: #87826e; padding: 20px; font-size: 18px;cursor:pointer'
             onclick="showContent('review')">REVIEW</a>
     </div>
 
@@ -90,7 +95,13 @@
                     </p>
                     <div style='margin: 12px 0'>
                         <span style="font-size: 20px" class="author-name">
-                            <?= $binhluan['user_name'] ?>
+                            <?php
+                            $user_id = $binhluan['user_id'];
+                            $user = loadone_users($user_id);
+                            // echo '<pre>';
+                            // var_dump($user);
+                            // echo '</pre>';
+                            echo $user[0]["user"] ?>
                         </span>
                         <span class="review-date" style="font-size: 20px">-
                             <?= $binhluan['time'] ?>
@@ -115,7 +126,11 @@
                 </form>
             ';
         } else {
-            echo '<h1>Bạn vui lòng đăng nhập để nhận xét</h1>';
+            echo '<h1 style="font-weight: 500;
+            font-size: 42px;
+            font-family: var(--primary-font);">Bạn vui lòng đăng nhập để nhận xét</h1> <br>
+                <a href="index.php?act=login" style="text-decoration:none;padding:10px;background-color: #333;border: none;font-size: 18px;font-weight: 500; color: white;cursor:pointer">Login</a>
+            ';
         }
         ?>
     </div>
@@ -135,14 +150,12 @@
             document.getElementById('review-content').style.display = 'block';
             document.getElementById('description-link').style.color = '#87826e';
             document.getElementById('review-link').style.color = 'black';
-
-
         }
     }
 </script>
 
 <!-- PRODUCT CONTAINER -->
-<section id="product_container_home" style="padding-bottom: 100px">
+<section id="product_container_home" style="padding-bottom: 100px;">
     <div id="product_container_home_header">
         <h1 id="product_container_home_header_title">Related Items</h1>
         <div class="product_container_home_header_right">

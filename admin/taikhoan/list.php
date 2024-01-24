@@ -1,6 +1,6 @@
 <div class="row">
       <div class="row_header">
-        <p>Danh Sách loại hàng</p>
+        <p>Danh Sách Khách hàng</p>
       </div>
       <div class="row">
         <div class="row_nb10 fomdsloai">
@@ -38,11 +38,11 @@
             
           </table>
         </div>
-        <div class="row_mb21">
+        <!-- <div class="row_mb21">
           <input type="button" value="Chọn tất cả">
           <input type="button" value="Bỏ chọn tất cả">
           <input type="button" name="" id="" value="xóa các mục đã chọn">
           <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
-        </div>
+        </div> -->
       </div>
     </div>

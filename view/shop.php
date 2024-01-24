@@ -3,8 +3,8 @@
         <h1>Shop</h1>
     </div>
 </div>
-<article id="product_container">
-    <ul id="product_container_list1" class="owl-carousel">
+<article id="product_container" >
+    <ul id="product_container_list1" class="owl-carousel" >
         <?php foreach ($listsanpham as $product) { ?>
             <li class="product_container_item">
                 <img style="height: 430px" src="view/img/<?php echo $product['img'] ?>" alt="">

@@ -30,16 +30,11 @@
     <input name='password' id="password" type="text" style="margin-bottom: 12px;" placeholder="Your Password"value="<?php echo $password?>"
         required>
 
-    <!-- <label for="password">CONFIRM PASSWORD</label>
-    <input name='confirmPassword' id="confirmPassword" type="password" style="margin-bottom: 12px;"
-        placeholder="Your Password" required>
-    <span id="errMess" style="color: red;"></span> -->
-
     <input type="hidden" name="id" value="<?php echo $id?>">
     <input id='submit' style='background-color: #333;border: none;font-size: 18px;font-weight: 500; color: white'
         name='submit' type="submit" value="Update"/>
     <hr>
-    <p><?php echo $thongbao?></p>
+    <p><?php echo $thongbao ?? ''?></p>
 </form>
 <script>
     const submit = document.getElementById("submit");

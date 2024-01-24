@@ -62,8 +62,15 @@ if (isset($_SESSION["user"])) {
             <h3><a href="index.php?act=quenmk">FORGOT PASSWORD</a></h3>
         </div>
         <input name="submit" id="submit" type="submit" value="Login" style="background-color: #333;border: none;font-size: 18px;font-weight: 500; color: white">
-        <hr>
-    </form>';
+        <hr>';
+
+if(isset($thongbao)) {
+    echo $thongbao;
+}
+
+echo '
+    </form>
+';
 }
 
 ?>

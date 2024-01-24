@@ -11,7 +11,7 @@
     <div class="container_header">
       <h1>ADMIN</h1>
     </div>
-    <a href="index.php?act=vetrangkhach">Ve trang khach</a>
+    <a href="/assignment/index.php">Ve trang khach</a>
     <div class="container_menu">
       <ul>
         <li><a href="index.php">Trang Chủ</a></li>

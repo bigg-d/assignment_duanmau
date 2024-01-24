@@ -135,6 +135,13 @@ if (isset($_GET['act'])) {
             $dsbl = loadall_binhluan(0);
             include "binhluan/list.php";
             break;
+        case 'xoabl':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_binhluan($_GET['id']);
+            }
+            $dsbl = loadall_binhluan(0);
+            include "binhluan/list.php";
+            break;
         case 'thongke':
             $listthongke = loadall_thongke();
             include "thongke/list.php";
